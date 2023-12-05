@@ -1,7 +1,13 @@
-const SearchField = () => {
+import './search-field-style.css';
+
+const SearchField = ({ type, placeholder, className, onChangeHandler }) => {
 
   return (
-    <div>This is Search Field</div>
+    <input
+      type={type}
+      placeholder={placeholder}
+      className={className}
+      onChange={onChangeHandler} />
   )
 }
 
